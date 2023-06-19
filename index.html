@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="ParaDoxx Linktree" />
+  <meta property="og:description" content="A simple linktree for ParaDoxx" />
+  <meta property="og:image" content="https://paradoxx.site/logoo.jpg" />
+  <meta property="og:url" content="https://paradoxx.site" />
+  <meta name="theme-color" content="#000000">
+  <title>ParaDoxx Linktree</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="pdxlab.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
+    rel="stylesheet">
+    
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .loader-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid #ccc;
+      border-top-color: #333;
+      animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    body {
+      visibility: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      /* Adjust this value to suit your needs */
+    }
+
+
+    h2 {
+      font-family: 'Saira', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+    }
+
+    body {
+      background: none;
+    }
+
+    video#video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    section {
+      position: relative;
+      inset: 0;
+      overflow-y: scroll;
+    }
+
+    section div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 600px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    section>div {
+      padding: 100px 10px;
+    }
+
+    section div img {
+      width: 100px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      box-shadow: 0 0 8px 1px lightblue;
+    }
+
+    a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white; /* Adjusted border width */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  gap: 20px;
+  align-items: center;
+  border-radius: 4px;
+  transition-duration: 200ms;
+}
+
+a:hover {
+  box-shadow: 0 0 10px 3px gold;
+  color: gold;
+}
+    a i {
+      font-size: 1.3em;
+    }
+
+    /* Additional CSS for two links in one section */
+    .links-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .links-container a {
+      flex-basis: 50%;
+    }
+
+    .links-container.two-links-in-one-line {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .links-container.two-links-in-one-line a {
+      flex-basis: calc(50% - 10px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="loader-icon"></div>
+  </div>
+
+  <video autoplay loop muted id="video-background">
+    <source src="background.webm" type="video/webm">
+  </video>
+  <section>
+    <div>
+      <img src="pdxlab.png" alt="dp" />
+      <h2>Hi! I am PARADOXX</h2>
+      <div class="links-container two-links-in-one-line">
+        <a href="https://discord.paradoxx.site" target="_blank">
+          <i class="fa-brands fa-discord fa-spin"></i>
+          <p>Discord</p>
+        </a>
+        <a href="https://github.com/paradoxx619" target="_blank">
+          <i class="fa-brands fa-github fa-spin"></i>
+          <p>GitHub</p>
+        </a>
+        <a href="https://paradoxx.site" target="_blank">
+          <i class="fa-solid fa-globe fa-spin"></i>
+          <p>Website</p>
+        </a>
+        <a href="mailto:paradox9682@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope fa-spin"></i>
+          <p>Email</p>
+        </a>
+        <a href="https://Patreon.com/paradoxx619" target="_blank">
+          <i class="fa-brands fa-patreon fa-spin"></i>
+          <p>Patreon</p>
+        </a>
+        <a href="https://www.paypal.com/donate?business=paradox9682@gmail.com&amp;currency_code=USD" target="_blank">
+          <i class="fa-brands fa-paypal fa-spin"></i>
+          <p>PayPal</p>
+        </a>
+        <a href="https://www.buymeacoffee.com/paradoxx" target="_blank">
+          <i class="fa-solid fa-solid fa-mug-hot fa-spin"></i>
+          <p>Coffee</p>
+        </a>
+        <a href="https://ko-fi.com/paradoxx" target="_blank">
+          <i class="fa-solid fa-glass-water fa-spin"></i>
+          <p>Kofi</p>
+        </a>
+        <a href="https://www.youtube.com/1upcraft" target="_blank">
+          <i class="fa-brands fa-youtube fa-spin"></i>
+          <p>YouTube</p>
+        </a>
+        <a href="https://twitch.tv/1upcraft" target="_blank">
+          <i class="fa-brands fa-twitch fa-spin"></i>
+          <p>Twitch</p>
+        </a>
+        <a href="https://instagram.com/paradoxx619" target="_blank">
+          <i class="fa-brands fa-instagram fa-spin"></i>
+          <p>Instagram</p>
+        </a>
+        <a href="https://twitter.com/1upcraft" target="_blank">
+          <i class="fa-brands fa-twitter fa-spin"></i>
+          <p>Twitter</p>
+        </a>
+        <a href="https://codepen.io/ParaDox-07" target="_blank">
+          <i class="fa-brands fa-codepen fa-spin"></i>
+          <p>CodePen</p>
+        </a>
+        <a href="https://t.me/paradoxx619" target="_blank">
+          <i class="fa-solid fa-paper-plane fa-spin"></i>
+          <p>Telegram</p>
+        </a>
+  </section>
+
+<script>
+  window.addEventListener('load', function () {
+  var loader = document.getElementById('loader');
+  var body = document.body;
+
+  loader.style.display = 'none';
+  body.style.visibility = 'visible';
+});
+
+</script>
+
+</body>
+
+</html>
